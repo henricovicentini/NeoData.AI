@@ -36,19 +36,3 @@ Empresas frequentemente enfrentam:
 | **Banco** | SQLite (protótipo), PostgreSQL/MySQL (produção) |
 | **Visualização** | Plotly, Matplotlib, Dash |
 
----
-
-## 📅 Cronograma (Fases)  
-
-- **Fase 1 (MVP)** → Upload CSV → Limpeza → Download CSV  
-- **Fase 2** → Integração via API (FastAPI/Flask)  
-- **Fase 3** → Conexão direta com bancos SQL  
-- **Fase 4** → Dashboard interativo (comparação antes vs depois)  
-
----
-
-## 🚀 Próximos Passos  
-- [ ] Criar protótipo inicial com upload de CSV.  
-- [ ] Adicionar banco SQL para armazenar dados brutos e limpos.  
-- [ ] Disponibilizar API segura para integração com outros sistemas.  
-- [ ] Desenvolver visualização interativa dos resultados da limpeza.  
