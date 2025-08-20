@@ -1,9 +1,5 @@
 ### NeoData.AI – Organize, Limpe, Reutilize  
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
-[![GitHub stars](https://img.shields.io/github/stars/henricovicentini/NeoData.AI?style=social)](https://github.com/henricovicentini/NeoData.AI/stargazers)  
-
 Sistema de ingestão e limpeza de dados estruturados, focado em automação, qualidade e reutilização para relatórios, sistemas e modelos de IA.
 
 ---
