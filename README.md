@@ -42,6 +42,52 @@ Empresas frequentemente enfrentam:
 
 ---
 
+## 📂 Estrutura do Repositório
+
+```
+NeoData.IA/ 
+│── run.py                     # Arquivo principal para rodar a aplicação Flask
+│── requirements.txt            # Dependências do projeto
+│
+├── app/
+│   ├── __init__.py             # Inicializa o Flask (configuração principal)
+│   ├── routes.py               # Rotas principais (upload, raw, clean, profile, dashboard)
+│   │
+│   ├── auth/                   # Módulo de autenticação
+│   │   ├── __init__.py
+│   │   ├── routes.py           # Login, logout, cadastro
+│   │
+│   ├── pred/                   # Módulo de predição (placeholder)
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │
+│   ├── static/                 # Arquivos estáticos (CSS, JS, imagens, gráficos)
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   └── script.js
+│   │   └── graphs/             # Gráficos gerados pelo matplotlib
+│   │
+│   ├── templates/              # Templates HTML estilizados
+│   │   ├── base.html           # Estrutura base (head + body)
+│   │   ├── header.html         # Cabeçalho/nav
+│   │   ├── home.html           # Tela inicial (upload CSV)
+│   │   ├── login.html          # Tela de login
+│   │   ├── cadastro.html       # Tela de cadastro
+│   │   ├── raw.html            # Dados brutos
+│   │   ├── clean.html          # Dados limpos + download CSV
+│   │   ├── profile.html        # Placeholder de perfil
+│   │   ├── dashboard.html      # Gráficos comparativos
+│   │   └── error.html          # Página de erro (opcional)
+│   │
+│   └── utils/                  # Funções auxiliares
+│       ├── __init__.py
+│       ├── cleaning.py         # Lógica de limpeza (pandas)
+│       └── graphs.py           # Geração de gráficos (matplotlib)
+```
+
+---
+
 ## 🚀 Como rodar o projeto
 
 ### 1. Clonar o repositório
@@ -105,3 +151,17 @@ Acesse:
 - Enviar arquivos CSV/Excel para ingestão.  
 - Visualizar dashboard de comparação antes/depois.  
 - Exportar dados tratados em CSV/JSON ou integrar com banco de dados.
+
+---
+
+## 📝 Licença
+
+MIT
+
+---
+
+## 📫 Contato
+
+Para mais informações ou dúvidas, entre em contato:  
+
+**Email:** vicentinihenrico@gmail.com
