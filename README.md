@@ -71,14 +71,14 @@ NeoData.IA/
 │   ├── templates/              # Templates HTML estilizados
 │   │   ├── base.html           # Estrutura base (head + body)
 │   │   ├── header.html         # Cabeçalho/nav
-│   │   ├── home.html           # Tela inicial (upload CSV)
+│   │   ├── home.html           # Tela inicial
 │   │   ├── login.html          # Tela de login
 │   │   ├── cadastro.html       # Tela de cadastro
 │   │   ├── raw.html            # Dados brutos
 │   │   ├── clean.html          # Dados limpos + download CSV
 │   │   ├── profile.html        # Placeholder de perfil
 │   │   ├── dashboard.html      # Gráficos comparativos
-│   │   └── error.html          # Página de erro (opcional)
+│   │  
 │   │
 │   └── utils/                  # Funções auxiliares
 │       ├── __init__.py
