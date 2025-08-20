@@ -1,0 +1,58 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="container mt-5">
+  <h2 class="text-center fw-bold mb-4" style="color:#073763;">Dashboard — Comparação Antes x Depois</h2>
+
+  <div class="row g-4">
+    {% if idade_before %}
+    <div class="col-md-6">
+      <div class="card shadow rounded-4">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-semibold" style="color:#024495;">Idade — Antes</h5>
+          <img src="{{ url_for('static', filename='graphs/' + idade_before) }}" class="img-fluid rounded" alt="Idade antes">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if idade_after %}
+    <div class="col-md-6">
+      <div class="card shadow rounded-4">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-semibold" style="color:#024495;">Idade — Depois</h5>
+          <img src="{{ url_for('static', filename='graphs/' + idade_after) }}" class="img-fluid rounded" alt="Idade depois">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if sal_before %}
+    <div class="col-md-6">
+      <div class="card shadow rounded-4">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-semibold" style="color:#024495;">Salário — Antes</h5>
+          <img src="{{ url_for('static', filename='graphs/' + sal_before) }}" class="img-fluid rounded" alt="Salário antes">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if sal_after %}
+    <div class="col-md-6">
+      <div class="card shadow rounded-4">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-semibold" style="color:#024495;">Salário — Depois</h5>
+          <img src="{{ url_for('static', filename='graphs/' + sal_after) }}" class="img-fluid rounded" alt="Salário depois">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="d-flex justify-content-center mt-4">
+    <a href="{{ url_for('clean') }}" class="btn btn-outline-primary rounded-pill px-4" style="color:#024495; border-color:#024495;">
+      Voltar para Limpeza
+    </a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow rounded-3 p-4">
+  <h2 class="text-center text-primary mb-3">Dados Brutos (Simulados)</h2>
+
+  {% if novos_dados %}
+    <div class="alert alert-success text-center">
+      ✅ Novos dados foram enviados para o banco de dados!
+    </div>
+  {% endif %}
+
+  <div class="mb-3 text-muted small">
+    <strong>Linhas:</strong> {{ stats.rows }} |
+    <strong>Colunas:</strong> {{ stats.cols }} |
+    <strong>Missing:</strong> {{ stats.missing_total }} |
+    <strong>Duplicadas:</strong> {{ stats.duplicates }} |
+    <strong>Outliers estimados:</strong> {{ stats.outliers_estimated }}
+  </div>
+
+  <div class="table-responsive">
+    {{ table|safe }}
+  </div>
+
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <a href="{{ url_for('pred.clean') }}" class="btn btn-primary">🔄 Limpar Dados</a>
+    <a href="{{ url_for('pred.download') }}" class="btn btn-outline-primary">⬇️ Baixar CSV Limpo</a>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-success">📊 Ir para Dashboard</a>
+  </div>
+</div>
+{% endblock %}
