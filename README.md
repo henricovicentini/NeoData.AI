@@ -1,4 +1,4 @@
-### NeoData.AI – Organize, Limpe, Reutilize  
+### NeoData – Organize, Limpe, Reutilize  
 
 Sistema de ingestão e limpeza de dados estruturados, focado em automação, qualidade e reutilização para relatórios, sistemas e modelos de IA.
 
