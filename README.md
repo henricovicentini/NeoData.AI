@@ -93,8 +93,8 @@ NeoData.IA/
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/henricovicentini/NeoData.AI.git
-cd NeoData.AI
+git clone https://github.com/henricovicentini/NeoData.git
+cd NeoData
 ```
 
 ### 2. Criar e ativar o ambiente virtual
